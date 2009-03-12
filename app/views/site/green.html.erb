@@ -3,5 +3,6 @@
   <%= render :partial => "green" %>
 </p>
 <p>
-  <%= link_to "Back", :action => "index" %>  <%= link_to "Red", :action => "red" %>
+  <%= link_to "Back", :action => "index" %>
+  <%= link_to_remote "Red", :update => "color", :url => {:action => "red"}, :html => { :href => url_for({:action => "red"}) }  %>
 </p>

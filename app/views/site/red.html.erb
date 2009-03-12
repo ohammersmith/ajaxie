@@ -1,7 +1,8 @@
 <h1>Testing Cucumber&apos;s ability to check Ajax features</h1>
-<p>
+<p id="color">
 <%= render :partial => 'red' %>
 </p>
 <p>
-  <%= link_to "Back", :action => "index" %>   <%= link_to "Green", :action => "green" %>
+  <%= link_to "Back", :action => "index" %> 
+  <%= link_to_remote "Green", :update => "color", :url => {:action => "green"}, :html => { :href => url_for({:action => "green"}) }  %>
 </p>

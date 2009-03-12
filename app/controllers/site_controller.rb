@@ -5,14 +5,14 @@ class SiteController < ApplicationController
   def green
     respond_to do |wants|
       wants.html
-      wants.js  #...
+      wants.js  { render :text => "GREEN"}
     end
   end
   
   def red
     respond_to do |wants|
       wants.html
-      wants.js  #...
+      wants.js  { render :text => "RED"}
     end
   end
 
