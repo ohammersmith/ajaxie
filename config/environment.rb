@@ -9,7 +9,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.gem 'random_data'
   config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
-  config.gem 'cucumber', :lib => false
+  config.gem 'aslakhellesoy-cucumber', :lib => false, :source => 'http://gems.github.com'
   config.gem 'rspec-rails', :lib => false
   config.gem 'rspec', :lib => false
   # Settings in config/environments/* take precedence over those specified here.
